@@ -1,7 +1,7 @@
 ---
 layout: null
-title: Archives
-permalink: /archives/
+title: Blog
+permalink: /blog/
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +10,17 @@ permalink: /archives/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Research notes and articles by Likun Zhang on computer systems, serverless computing, virtualization, operating systems, and networks."
+      content="The personal blog of Liquid, featuring research notes on computer systems, serverless computing, virtualization, operating systems, and networks."
     >
     <meta name="theme-color" content="#ffffff">
-    <title>Archives — Likun Zhang</title>
+    <meta property="og:title" content="Blog — Liquid">
+    <meta
+      property="og:description"
+      content="Research notes, paper reading, and explorations in computer systems."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liquidzk.github.io/blog/">
+    <title>Blog — Liquid</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,25 +38,25 @@ permalink: /archives/
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="/">Home</a>
           <a href="/publications/">Publications</a>
-          <a class="active" href="/archives/" aria-current="page">Archives</a>
+          <a class="active" href="/blog/" aria-current="page">Blog</a>
         </nav>
       </div>
     </header>
 
-    <main class="archives-page">
+    <main class="blog-page">
       <header class="page-heading">
-        <h1>Archives</h1>
+        <h1>Blog</h1>
         <p>
-          Random stuff.
-          杂七杂八的都写点。
+          Research notes, paper reading, and explorations in computer systems.
+          记录研究阅读、系统实践与阶段性思考。
         </p>
       </header>
 
       {% if site.posts.size > 0 %}
-        <ol class="archive-list">
+        <ol class="post-list">
           {% for post in site.posts %}
-            <li class="archive-item">
-              <time class="archive-date" datetime="{{ post.date | date_to_xmlschema }}">
+            <li class="post-item">
+              <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
                 {{ post.date | date: "%b %d, %Y" }}
               </time>
               <div>
@@ -64,9 +71,9 @@ permalink: /archives/
           {% endfor %}
         </ol>
       {% else %}
-        <section class="empty-archive">
-          <h2>Articles are on the way.</h2>
-          <p>The archive is ready; the first research note will appear here soon.</p>
+        <section class="empty-blog">
+          <h2>No posts yet.</h2>
+          <p>The first research note will appear here soon.</p>
         </section>
       {% endif %}
     </main>

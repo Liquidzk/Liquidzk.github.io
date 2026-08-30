@@ -1,7 +1,7 @@
 ---
 title: "Article title"
 date: 2026-08-30
-description: "A short summary shown on the Archives page and in search results."
+description: "A short summary shown on the Blog page and in search results."
 tags:
   - systems
 lang: en

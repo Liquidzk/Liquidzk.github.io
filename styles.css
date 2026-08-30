@@ -344,9 +344,9 @@ img {
   margin: 0;
 }
 
-/* Archives */
+/* Blog */
 
-.archives-page,
+.blog-page,
 .publications-page {
   width: min(calc(100% - 2.5rem), 760px);
   min-height: calc(100vh - 12rem);
@@ -383,13 +383,13 @@ img {
   color: var(--muted);
 }
 
-.archive-list {
+.post-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.archive-item {
+.post-item {
   display: grid;
   grid-template-columns: 7.5rem minmax(0, 1fr);
   gap: 1.5rem;
@@ -397,13 +397,13 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
-.archive-date,
+.post-date,
 .article-meta {
   color: var(--muted);
   font-size: 0.78rem;
 }
 
-.archive-item h2 {
+.post-item h2 {
   margin: -0.25rem 0 0;
   font-family: var(--serif);
   font-size: 1.55rem;
@@ -411,31 +411,31 @@ img {
   line-height: 1.35;
 }
 
-.archive-item h2 a:hover,
-.archive-item h2 a:focus-visible {
+.post-item h2 a:hover,
+.post-item h2 a:focus-visible {
   color: var(--accent);
 }
 
-.archive-item p {
+.post-item p {
   margin: 0.55rem 0 0;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
-.empty-archive {
+.empty-blog {
   margin: 3.5rem 0;
   padding: 2rem;
   border: 1px solid var(--line);
   background: var(--surface);
 }
 
-.empty-archive h2 {
+.empty-blog h2 {
   margin: 0;
   font-family: var(--serif);
   font-size: 1.3rem;
 }
 
-.empty-archive p {
+.empty-blog p {
   margin: 0.5rem 0 0;
   color: var(--muted);
 }
@@ -536,7 +536,7 @@ img {
   .header-inner,
   .profile,
   .site-footer,
-  .archives-page,
+  .blog-page,
   .publications-page,
   .article-page {
     width: min(calc(100% - 2rem), var(--content-width));
@@ -591,13 +591,13 @@ img {
     gap: 0.25rem;
   }
 
-  .archives-page,
+  .blog-page,
   .publications-page,
   .article-page {
     padding-top: 3.5rem;
   }
 
-  .archive-item {
+  .post-item {
     grid-template-columns: 1fr;
     gap: 0.4rem;
   }
