@@ -164,7 +164,6 @@ img {
 }
 
 .profile-links a,
-.inline-link,
 .post-link {
   color: var(--accent);
   font-weight: 500;
@@ -176,8 +175,6 @@ img {
 
 .profile-links a:hover,
 .profile-links a:focus-visible,
-.inline-link:hover,
-.inline-link:focus-visible,
 .post-link:hover,
 .post-link:focus-visible {
   color: var(--accent-dark);
@@ -272,10 +269,6 @@ img {
 .education-item time {
   margin: 0.1rem 0 0;
   white-space: nowrap;
-}
-
-.brief-section {
-  border-bottom: 0;
 }
 
 .site-footer {
