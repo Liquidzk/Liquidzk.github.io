@@ -346,11 +346,20 @@ img {
 
 /* Archives */
 
-.archives-page {
+.archives-page,
+.publications-page {
   width: min(calc(100% - 2.5rem), 760px);
   min-height: calc(100vh - 12rem);
   margin: 0 auto;
   padding: 5rem 0 6rem;
+}
+
+.publication-page-list {
+  margin-top: 2rem;
+}
+
+.publication-page-list h3 {
+  font-size: 1.3rem;
 }
 
 .page-heading {
@@ -528,6 +537,7 @@ img {
   .profile,
   .site-footer,
   .archives-page,
+  .publications-page,
   .article-page {
     width: min(calc(100% - 2rem), var(--content-width));
   }
@@ -582,6 +592,7 @@ img {
   }
 
   .archives-page,
+  .publications-page,
   .article-page {
     padding-top: 3.5rem;
   }
