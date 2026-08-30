@@ -239,6 +239,64 @@ img {
   font-size: 0.91rem;
 }
 
+.publication-list {
+  margin: 0;
+  padding: 0;
+  counter-reset: publications;
+  list-style: none;
+}
+
+.publication-list > li {
+  position: relative;
+  padding: 1.35rem 0 1.35rem 2.5rem;
+  border-top: 1px solid var(--line);
+  counter-increment: publications;
+}
+
+.publication-list > li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-list > li::before {
+  position: absolute;
+  top: 1.45rem;
+  left: 0;
+  color: var(--muted);
+  content: "[" counter(publications) "]";
+  font-size: 0.78rem;
+}
+
+.publication-list h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.publication-list h3 a:hover,
+.publication-list h3 a:focus-visible,
+.publication-meta a {
+  color: var(--accent);
+}
+
+.publication-authors,
+.publication-meta {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.publication-authors strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.publication-meta {
+  margin-top: 0.25rem;
+}
+
 .education-list {
   border-top: 1px solid var(--line);
 }
