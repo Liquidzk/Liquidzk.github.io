@@ -1,28 +1,328 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <title>Likun Zhang</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Likun Zhang is an M.Sc. student in Artificial Intelligence at Nanyang Technological University, interested in serverless systems, virtualization, operating systems, and computer networks."
+    >
+    <meta name="theme-color" content="#f4f1e8">
+    <meta property="og:title" content="Likun Zhang — Systems Researcher">
+    <meta
+      property="og:description"
+      content="M.Sc. student at NTU working toward efficient and dependable computing systems."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liquidzk.github.io/">
 
-<body>
-    <h1>Likun Zhang</h1>
+    <title>Likun Zhang — Systems Researcher</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 
-    <p>
-        M.S. Student at Nanyang Technological University
-    </p>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Likun Zhang",
+        "url": "https://liquidzk.github.io/",
+        "sameAs": ["https://github.com/Liquidzk"],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Electronic Science and Technology of China"
+        },
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Nanyang Technological University"
+        },
+        "knowsAbout": [
+          "Serverless Computing",
+          "Virtualization",
+          "Operating Systems",
+          "Computer Networks"
+        ]
+      }
+    </script>
+  </head>
 
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Computer Systems</li>
-        <li>Serverless Computing</li>
-        <li>Virtualization</li>
-    </ul>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-    <h2>Publications</h2>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Likun Zhang, home">
+        <span class="wordmark-mark" aria-hidden="true">LZ</span>
+        <span class="wordmark-name">Likun Zhang</span>
+      </a>
 
-    <h2>Experience</h2>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
 
-    <h2>Contact</h2>
-</body>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#research" data-i18n="navResearch">Research</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <button class="language-toggle" type="button" aria-label="切换到中文" data-language-toggle>
+        <span class="language-current">EN</span>
+        <span class="language-divider">/</span>
+        <span class="language-next">中</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-notation notation-one" aria-hidden="true">λ</div>
+        <div class="hero-notation notation-two" aria-hidden="true">01</div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">
+            SYSTEMS RESEARCHER · PROSPECTIVE PHD APPLICANT
+          </p>
+          <h1 id="hero-title">
+            <span data-i18n="heroLineOne">Building systems that</span><br>
+            <em data-i18n="heroLineTwo">scale with purpose.</em>
+          </h1>
+          <p class="hero-intro" data-i18n="heroIntro">
+            I am an M.Sc. student in Artificial Intelligence at Nanyang Technological University,
+            exploring how serverless computing, virtualization, and operating systems can make
+            modern infrastructure more efficient and dependable.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">
+              <span data-i18n="exploreResearch">Explore my research</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="text-link" href="mailto:492928615@qq.com">
+              <span data-i18n="getInTouch">Get in touch</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-one" aria-label="Current status">
+          <div class="status-line">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="openStatus">Preparing Ph.D. applications</span>
+          </div>
+          <div class="hero-card-main">
+            <span class="hero-card-label" data-i18n="currentlyAt">CURRENTLY AT</span>
+            <p>Nanyang Technological University</p>
+            <span>Singapore · 2025—2027</span>
+          </div>
+          <div class="topic-list">
+            <span>Serverless</span>
+            <span>Virtualization</span>
+            <span>OS</span>
+            <span>Networks</span>
+          </div>
+        </aside>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>SERVERLESS COMPUTING</span><i>✦</i>
+          <span>VIRTUALIZATION</span><i>✦</i>
+          <span>OPERATING SYSTEMS</span><i>✦</i>
+          <span>COMPUTER NETWORKS</span><i>✦</i>
+          <span>SERVERLESS COMPUTING</span><i>✦</i>
+          <span>VIRTUALIZATION</span><i>✦</i>
+          <span>OPERATING SYSTEMS</span><i>✦</i>
+          <span>COMPUTER NETWORKS</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-index reveal">
+          <span>01</span>
+          <span data-i18n="aboutIndex">ABOUT</span>
+        </div>
+
+        <div class="about-content">
+          <h2 class="section-title reveal" id="about-title" data-i18n="aboutTitle">
+            At the boundary of<br>systems &amp; intelligence.
+          </h2>
+          <div class="about-columns reveal delay-one">
+            <p data-i18n="aboutP1">
+              My work is driven by a simple question: how can we make computing infrastructure
+              adapt faster, waste less, and remain predictable under change?
+            </p>
+            <p data-i18n="aboutP2">
+              With a software engineering foundation and graduate training in artificial
+              intelligence, I am especially interested in the systems challenges behind elastic
+              cloud workloads—from lightweight isolation and resource management to runtime and
+              network efficiency.
+            </p>
+          </div>
+        </div>
+
+        <dl class="fact-grid reveal">
+          <div>
+            <dt>2021—2025</dt>
+            <dd data-i18n="factFoundation">Software engineering foundation</dd>
+          </div>
+          <div>
+            <dt>2025—2027</dt>
+            <dd data-i18n="factGraduate">Graduate study in AI</dd>
+          </div>
+          <div>
+            <dt>04</dt>
+            <dd data-i18n="factAreas">Connected research areas</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section research" id="research" aria-labelledby="research-title">
+        <div class="section-index section-index-light reveal">
+          <span>02</span>
+          <span data-i18n="researchIndex">RESEARCH</span>
+        </div>
+
+        <div class="research-heading reveal">
+          <p class="eyebrow" data-i18n="researchEyebrow">RESEARCH INTERESTS</p>
+          <h2 id="research-title" data-i18n="researchTitle">
+            Efficient foundations for<br>elastic computing.
+          </h2>
+          <p data-i18n="researchIntro">
+            I am interested in research that crosses traditional systems boundaries, connecting
+            the cloud runtime, the operating system, and the network.
+          </p>
+        </div>
+
+        <div class="research-list">
+          <article class="research-item reveal">
+            <span class="research-number">R / 01</span>
+            <div>
+              <h3 data-i18n="serverlessTitle">Serverless Systems</h3>
+              <p data-i18n="serverlessBody">
+                Fast startup, adaptive resource management, and predictable performance for
+                fine-grained, event-driven cloud workloads.
+              </p>
+            </div>
+            <span class="research-symbol" aria-hidden="true">λ</span>
+          </article>
+
+          <article class="research-item reveal">
+            <span class="research-number">R / 02</span>
+            <div>
+              <h3 data-i18n="virtualizationTitle">Virtualization &amp; OS</h3>
+              <p data-i18n="virtualizationBody">
+                Lightweight isolation, efficient scheduling, and operating-system support for
+                secure multi-tenant infrastructure.
+              </p>
+            </div>
+            <span class="research-symbol" aria-hidden="true">⌁</span>
+          </article>
+
+          <article class="research-item reveal">
+            <span class="research-number">R / 03</span>
+            <div>
+              <h3 data-i18n="networksTitle">Computer Networks</h3>
+              <p data-i18n="networksBody">
+                Network-aware system design and low-overhead data paths for distributed and
+                cloud-native applications.
+              </p>
+            </div>
+            <span class="research-symbol" aria-hidden="true">↝</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education" id="education" aria-labelledby="education-title">
+        <div class="section-index reveal">
+          <span>03</span>
+          <span data-i18n="educationIndex">EDUCATION</span>
+        </div>
+
+        <div class="education-content">
+          <h2 class="section-title reveal" id="education-title" data-i18n="educationTitle">
+            Academic journey.
+          </h2>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2025 — 2027</div>
+              <div class="timeline-marker" aria-hidden="true"><span></span></div>
+              <div class="timeline-copy">
+                <p class="timeline-degree" data-i18n="ntuDegree">
+                  M.Sc. in Artificial Intelligence
+                </p>
+                <h3>Nanyang Technological University</h3>
+                <p class="timeline-location" data-i18n="ntuLocation">Singapore · In progress</p>
+                <p data-i18n="ntuDescription">
+                  Graduate study at the intersection of intelligent methods and computing
+                  systems, with a focus on systems research.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2021 — 2025</div>
+              <div class="timeline-marker" aria-hidden="true"><span></span></div>
+              <div class="timeline-copy">
+                <p class="timeline-degree" data-i18n="uestcDegree">
+                  B.Eng. in Software Engineering
+                </p>
+                <h3 data-i18n="uestcName">
+                  University of Electronic Science and Technology of China
+                </h3>
+                <p class="timeline-location" data-i18n="uestcLocation">Chengdu, China</p>
+                <p data-i18n="uestcDescription">
+                  Built a broad foundation in software engineering, computer systems, and the
+                  design and implementation of reliable software.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orbit orbit-one" aria-hidden="true"></div>
+        <div class="contact-orbit orbit-two" aria-hidden="true"></div>
+        <p class="eyebrow reveal" data-i18n="contactEyebrow">LET'S START A CONVERSATION</p>
+        <h2 class="reveal" id="contact-title" data-i18n="contactTitle">
+          Exploring a shared<br>research question?
+        </h2>
+        <p class="contact-copy reveal" data-i18n="contactBody">
+          I am preparing for Ph.D. applications and would be glad to connect with researchers
+          working on computer systems, cloud computing, and related areas.
+        </p>
+        <div class="contact-actions reveal">
+          <a class="button button-light" href="mailto:492928615@qq.com">
+            <span>492928615@qq.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="button button-outline"
+            href="https://github.com/Liquidzk"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>GitHub</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Likun Zhang</p>
+      <p data-i18n="footerNote">Designed with curiosity. Built for the open web.</p>
+      <a href="#top" data-i18n="backToTop">Back to top ↑</a>
+    </footer>
+  </body>
 </html>
