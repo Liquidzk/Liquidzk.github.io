@@ -1,0 +1,78 @@
+---
+layout: null
+title: Archives
+permalink: /archives/
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Research notes and articles by Likun Zhang on computer systems, serverless computing, virtualization, operating systems, and networks."
+    >
+    <meta name="theme-color" content="#ffffff">
+    <title>Archives — Likun Zhang</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="/">Likun Zhang</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a class="active" href="/archives/" aria-current="page">Archives</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="archives-page">
+      <header class="page-heading">
+        <h1>Archives</h1>
+        <p>
+          Notes on computer systems, research papers, and things learned along the way.
+          这里记录研究阅读、系统实践与阶段性思考。
+        </p>
+      </header>
+
+      {% if site.posts.size > 0 %}
+        <ol class="archive-list">
+          {% for post in site.posts %}
+            <li class="archive-item">
+              <time class="archive-date" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%b %d, %Y" }}
+              </time>
+              <div>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                {% if post.description %}
+                  <p>{{ post.description }}</p>
+                {% else %}
+                  <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+                {% endif %}
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        <section class="empty-archive">
+          <h2>Articles are on the way.</h2>
+          <p>The archive is ready; the first research note will appear here soon.</p>
+        </section>
+      {% endif %}
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Likun Zhang</p>
+      <a href="/">Back to Home</a>
+    </footer>
+  </body>
+</html>

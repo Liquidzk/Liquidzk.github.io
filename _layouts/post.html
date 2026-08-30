@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="{{ page.title | escape }} — Likun Zhang">
+    <meta property="og:description" content="{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <title>{{ page.title }} — Likun Zhang</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="/">Likun Zhang</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a class="active" href="/archives/">Archives</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-page">
+      <article>
+        <header class="article-header">
+          <p class="article-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: "%B %d, %Y" }}
+            </time>
+            {% if page.tags %}
+              <span>·</span>
+              <span>{{ page.tags | join: " · " }}</span>
+            {% endif %}
+          </p>
+          <h1>{{ page.title }}</h1>
+          {% if page.description %}
+            <p class="article-description">{{ page.description }}</p>
+          {% endif %}
+        </header>
+
+        <div class="article-content">
+          {{ content }}
+        </div>
+      </article>
+
+      <a class="article-back" href="/archives/">← Back to Archives</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Likun Zhang</p>
+      <a href="/">Home</a>
+    </footer>
+  </body>
+</html>
